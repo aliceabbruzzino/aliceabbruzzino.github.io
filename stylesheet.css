@@ -1,8 +1,35 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-size: medium;
 }
 
-.main-div {
+/* PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO */
+
+@media (max-width: 800px) {
+    .portfolio-div, .container, .row, .col {
+        flex-direction: column;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.row {
+    background-color: khaki;
+    width: 100%;
+}
+
+.col {
+    float: left;
+    padding: 25%;
+    border: 2px solid chocolate;
+  }
+
+
+/* ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT */
+.about-div {
     margin: 5% 8% 8% 8%;
     padding-bottom: 1%;
     border-bottom: 2px solid chocolate;
