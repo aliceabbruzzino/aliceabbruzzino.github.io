@@ -1,5 +1,11 @@
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+body{
+    height: 100%;
+    scroll-behavior: smooth;
 }
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500&display=swap'); /* extralight 200 */
@@ -15,7 +21,10 @@ body{
 }
 
 /* TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU */
-
+.menu-type a{
+    text-decoration: none;
+    color: black;
+}
 .top-menu{
     border-bottom: 1px solid black;
     display: grid;
@@ -36,24 +45,77 @@ body{
     line-height: 30px;
 }
 
-/* PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO */
+/* INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO_INTRO */
+.section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sticker-1{
+    width: 500px;
+    margin: 10%;
+    margin-bottom: 20%;
+}
 
-@media (max-width: 800px) {
-    .portfolio-div{
-        flex-direction: column;
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 90%;
+    bottom: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.scroll-down::before, .scroll-down::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+.scroll-down:hover{
+    background-color: rgba(218, 91, 57, 0.3);
+    border-color: rgb(218, 91, 57);
+}
+@keyframes scroll-down {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
     }
 }
-
-.row{
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-flow: row wrap;
+@media (max-width: 640px) 
+{
+    .scroll-down{display: none;}
 }
 
-.col{
+/* PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO_PORTFOLIO */
+
+.col-md{
     text-align: center;
-    padding: 5%;
 }
+
 
 
 /* ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT */
@@ -63,15 +125,6 @@ body{
     border-bottom: 2px solid chocolate;
 }
 
-.title{
-    font-family: adobe-garamond-pro, serif;
-    font-style: italic;
-    font-size: 24px;
-    color: chocolate;
-    margin-bottom: 5%;
-    padding-bottom: 2%;
-    border-bottom: 2px solid chocolate;
-}
 
 #profile{
     width: 20%;

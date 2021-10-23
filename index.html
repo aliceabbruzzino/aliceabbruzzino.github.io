@@ -3,7 +3,9 @@
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
- <link rel="stylesheet" href="stylesheet.css">
+ <link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+ <link rel="stylesheet" href="./bootstrap/bootstrap-grid.css">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
  <title>Home</title>
 </head>
@@ -13,29 +15,57 @@
 <header>
     <div class="top-menu">
         <div class="my-name">Alice Abbruzzino</div>
-        <div class="menu-type">WORKS</div>
-        <div class="menu-type">ABOUT</div>
-        <div class="menu-type">CONTACT</div>
+        <div class="menu-type">
+            <a href="">WORKS</a>
+        </div>
+        <div class="menu-type">
+            <a href="">ABOUT</a>
+        </div>
+        <div class="menu-type">
+            <a href="">CONTACT</a>
+        </div>
+        
     </div>
 </header>
 
 <!-- PAGE CONTENT -->
 <body>
 <div>
+
+<!-- INTRO -->
+    <div class="section intro">
+        <img class="sticker-1" src="./svg/sticker-orange.png">
+    </div>
+    <a href="#section-2">
+        <div class="scroll-down"></div>
+    </a>
 <!-- PORTFOLIO -->
-    <div class="portfolio-div">
+    <div id="section-2" class="section container portfolio">
             <div class="row">
-                <div class="col"><p> 1 </p></div>
-                <div class="col"><p> 2 </p></div>                
+                <div class="col-md">
+                    <img src="img/solid_colour/blue.jpeg" width="60%">
+                    <p> 1 </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/solid_colour/green.jpeg" width="60%">
+                    <p> 2 </p>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-md">
+                    <img src="img/solid_colour/red.jpeg" width="60%">
+                    <p> 3 </p>
+                </div>
+                <div class="col-md">
+                    <img src="img/solid_colour/orange.jpeg" width="60%">
+                    <p> 4 </p>
+                </div>
+                
             </div>
     </div>
 
  <!-- ABOUT -->
     <div class="about-div">
-        <div class="title">
-            <h1>Alice Abbruzzino</h1>
-        </div>
-        
+
         <div class="photo">
             <img id="profile" src="img/WhatsApp Image 2021-09-17 at 14.00.06.jpeg">
         </div>
