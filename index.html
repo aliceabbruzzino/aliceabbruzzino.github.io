@@ -15,71 +15,53 @@
 
 <!-- TOP MENU -->
 <header>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">Alice Abbruzzino</a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#home">Alice Abbruzzino</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#">WORKS</a>
-        <a class="nav-item nav-link" href="#">ABOUT</a>
-        <a class="nav-item nav-link" href="#">CONTACT</a>
+        <a class="nav-item nav-link" href="#portfolio">WORKS</a>
+        <a class="nav-item nav-link" href="#about">ABOUT</a>
+        <a class="nav-item nav-link" href="#contact">CONTACT</a>
       </div>
     </div>
 </nav>
 </heder>
-
-<!--
-<header>
-    <div class="navbar">
-        <a class="navbar-brand" href="#">Alice Abbruzzino
-        <div class="menu-type">
-            <a href="">WORKS</a>
-        </div>
-        <div class="menu-type">
-            <a href="">ABOUT</a>
-        </div>
-        <div class="menu-type">
-            <a href="">CONTACT</a>
-        </div>
-
-    </div>
-</header>
--->
 
 <!-- PAGE CONTENT -->
 <body>
 <div>
 
 <!-- INTRO -->
-    <div class="container intro" >
+    <div id="home" class="container-fluid intro" >
         <img class="sticker-1" src="./svg/sticker-orange.png">
     </div>
-    <a href="#section-2">
+    <a href="#portfolio">
         <div class="scroll-down"></div>
     </a>
 <!-- PORTFOLIO -->
-    <div id="section-2" class="portfolio">
+    <div id="portfolio" class="container portfolio">
         <p class="comment"> ✧ please, say that you like them ( ˘ ³˘) </p>
             <div class="row">
-                <div class="col-md">
+                <div class="col-md portfolio">
                     <img src="img/solid_colour/blue.jpeg" width="60%">
                     <h1> Life </h1>
                     <p> A photographic journey in the woods </p>
                 </div>
-                <div class="col-md">
+                <div class="col-md portfolio">
                     <img src="img/solid_colour/green.jpeg" width="60%">
                     <h1> Rain </h1>
                     <p> A wet and dramatic sound story </p>
                 </div>
                     <div class="w-100"></div>
-                <div class="col-md">
+                <div class="col-md portfolio">
                     <img src="img/solid_colour/red.jpeg" width="60%">
                     <h1> JBL Speaker </h1>
                     <p> A product and entertainment video project </p>
                 </div>
-                <div class="col-md">
+                <div class="col-md portfolio">
                     <img src="img/solid_colour/orange.jpeg" width="60%">
                     <h1> Unpredictable Burger </h1>
                     <p> A physical computing project based on Murakami's story </p>
@@ -88,33 +70,71 @@
     </div>
 
  <!-- ABOUT -->
-    <div class="about-div">
+    <div id="about" class="container">
+      <p class="comment"> ✧ oh no, I have to talk abuot me （･□･）</p>
+      <div class="row">
+         <div class="col-md about">
+           <h2 class="hello">
+               Hello, I am Alice.
+               <!--<p id="hand">👋🏼</p>-->
+           </h2>
+           <p>
+               I am an Italian Visual Communication Designer, now enrolled in the <a href="https://www.ul.ie/gps/interaction-and-experience-design-mamsc">IXUX</a>
+               course at the <a href="https://www.ul.ie">University of Limerick</a>. <br>
+               Firstly, I attended an <a href="https://classicoartisticomusicale.scuole.vda.it/">Art High School</a> with a specialisation in Graphic Design.
+               There, I developed both manual and digital skills such as drawing, painting, sculpting and visual design.<br>
+               After the graduation, I enrolled at <a href="www.polimi.it">Politecnico di Milano</a>. <br>
+               The first year I attended the <a href="https://www.design.polimi.it/it/didattica/offerta-formativa/lauree?tx_didatticascuole_elencocds%5Baction%5D=show&tx_didatticascuole_elencocds%5Bcontroller%5D=Elencocds&tx_didatticascuole_elencocds%5Belencocds%5D=111&cHash=1f0608ca0aa06aa78953da1b3fb676b2">Industrial Product course</a>,
+               developing manual and digital projects based on the analysis of physical products. <br>
+               The following two years I moved to the
+               <a chref="https://www.design.polimi.it/it/didattica/offerta-formativa/lauree?tx_didatticascuole_elencocds%5Baction%5D=show&tx_didatticascuole_elencocds%5Bcontroller%5D=Elencocds&tx_didatticascuole_elencocds%5Belencocds%5D=107&cHash=ae95c1d0add43191ecdfa8e3bde7491f">Communication Design course</a>, <br>
+               in witch I graduated,  developing skills on project management, brand identity, 3D modelling, motion graphics and some basic ones on web design. <br>
+               I am also interested in <a href="https://www.instagram.com/alicetheillustrator/">illustration</a>.
+           </p>
+         </div>
+         <div class="col-md about">
+          <img id="profile" src="img/WhatsApp Image 2021-11-05 at 11.39.23.jpeg">
+         </div>
+       </div>
+      </div>
 
-        <p class="comment"> ✧ oh no, I have to talk abuot me （･□･）</p>
+<!-- Footer -->
+  <footer>
+    <div class="row">
+    <div class="col-md-6 col-md-offset-3" id="form_container">
+        <form role="form" method="post" id="reused_form">
 
-        <img id="profile" src="img/WhatsApp Image 2021-11-05 at 11.39.23.jpeg">
-        <div class="text">
-            <h2 class="hello">
-                Hello, I am Alice.
-                <!--<p id="hand">👋🏼</p>-->
-            </h2>
-            <p>
-                I am an Italian Visual Communication Designer, now enrolled <br> in the <a href="https://www.ul.ie/gps/interaction-and-experience-design-mamsc">IXUX</a>
-                course at the <a href="https://www.ul.ie">University of Limerick</a>. <br>
-                Firstly, I attended an <a href="https://classicoartisticomusicale.scuole.vda.it/">Art High School</a> with a specialisation in Graphic Design. <br>
-                There, I developed both manual and digital skills such as drawing, painting, sculpting and visual design.<br>
-                After the graduation, I enrolled at <a href="www.polimi.it">Politecnico di Milano</a>. <br>
-                The first year I attended the <a href="https://www.design.polimi.it/it/didattica/offerta-formativa/lauree?tx_didatticascuole_elencocds%5Baction%5D=show&tx_didatticascuole_elencocds%5Bcontroller%5D=Elencocds&tx_didatticascuole_elencocds%5Belencocds%5D=111&cHash=1f0608ca0aa06aa78953da1b3fb676b2">Industrial Product course</a>,
-                developing manual and digital projects based on the analysis of physical products. <br>
-                The following two years I moved to the
-                <a chref="https://www.design.polimi.it/it/didattica/offerta-formativa/lauree?tx_didatticascuole_elencocds%5Baction%5D=show&tx_didatticascuole_elencocds%5Bcontroller%5D=Elencocds&tx_didatticascuole_elencocds%5Belencocds%5D=107&cHash=ae95c1d0add43191ecdfa8e3bde7491f">Communication Design course</a>, <br>
-                in witch I graduated,  developing skills on project management, brand identity, <br> 3D modelling, motion graphics and some basic ones on web design. <br>
-                I am also interested in <a href="https://www.instagram.com/alicetheillustrator/">illustration</a>.
-            </p>
+            <div class="row">
+              <div class="col-sm form-group">
+                  <input type="text" class="form-control" id="name" name="name" required placeholder="Jane Doe">
+              </div>
+              <div class="col-sm form-group">
+                  <input type="email" class="form-control" id="email" name="email" required placeholder="janedoe@mail.com">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7" placeholder="Hello Alice, I write you because I want your help to develop an awsome design project!"></textarea>
+                </div>
+                <div class="col-sm form-group">
+                  <button <button type="submit" class="btn btn-lg btn-default pull-right" >Send</button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your message successfully!</h3>
         </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
 
+        </div>
     </div>
 </div>
+
+  </footer>
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
