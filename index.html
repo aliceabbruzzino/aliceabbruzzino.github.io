@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
     <link rel="stylesheet" href="style.css">
  <title>Home</title>
 </head>
@@ -22,13 +21,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#portfolio">WORKS</a>
+        <a class="nav-item nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WORKS
+        </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="life.html">Life</a>
+              <a class="dropdown-item" href="#">Rain</a>
+              <a class="dropdown-item" href="#">JBL Speaker</a>
+              <a class="dropdown-item" href="#">Unpredictable Burger</a>
+            </div>
         <a class="nav-item nav-link" href="#about">ABOUT</a>
         <a class="nav-item nav-link" href="#contact">CONTACT</a>
       </div>
     </div>
-</nav>
-</heder>
+</header>
 
 <!-- PAGE CONTENT -->
 <body>
@@ -43,10 +49,12 @@
     </a>
 <!-- PORTFOLIO -->
     <div id="portfolio" class="container portfolio">
-        <p class="comment"> ✧ please, say that you like them ( ˘ ³˘) </p>
-            <div class="row">
+        <p class="comment portfolio"> ✧ please, say that you like them ( ˘ ³˘) </p>
+            <div class="row portfolio">
                 <div class="col-md portfolio">
+                  <a href="life.html">
                     <img class="work-img" src="img/Photos/03_revolving cone_edited - Copia.jpg">
+                  </a>
                     <h1> Life </h1>
                     <p> A photographic journey in the woods </p>
                 </div>
@@ -100,6 +108,7 @@
            <div class="scroll-up"></div>
        </a>
       </div>
+</body>
 
 <!-- Footer -->
   <footer>
@@ -131,10 +140,4 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
- <!-- Bootstrap JavaScript -->
- <!--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
--->
-</body>
 </html>
