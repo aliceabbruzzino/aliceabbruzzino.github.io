@@ -41,6 +41,10 @@ body{
     font-style: italic;
     font-size: 30px;
     line-height: 30px;
+    transition: transform .5s;
+}
+.navbar-brand:hover{
+    transform: scale(1.05);
 }
 .navbar-collapse{
   justify-content: flex-end;
@@ -149,7 +153,13 @@ body{
     color: chocolate;
 }
 
-
+.work-img{
+  width: 60%;
+  transition: transform .5s;
+}
+.work-img:hover{
+  transform: scale(1.1);
+}
 
 /* ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT_ABOUT */
 .about-div {
@@ -158,14 +168,14 @@ body{
 }
 
 #profile{
-    width: 80%;
+    width: 60%;
     float: right;
     z-index: 2;
     margin-top: 0%;
     margin-bottom: 5%;
 }
 
-#hand{
+/*#hand{
     font-size: xx-large;
     width: 30px;
     float: right;
@@ -185,7 +195,10 @@ body{
         transition-timing-function: ease;
         transform: rotate(0deg)}
 }
-
+*/
+.row.about{
+ margin-bottom: 8%;
+}
 .about .col-md{
   text-align: left;
 }
@@ -221,4 +234,63 @@ a:active{
     color: coral;
 }
 
+.scroll-up{
+    height: 50px;
+    width: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 95%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.scroll-up::before, .scroll-up::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid black;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(225deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-up 1s ease-in-out infinite;
+}
+.scroll-up::after{
+    top: 30%;
+    animation-delay: .3s;
+}
+.scroll-up:hover{
+    background-color: rgba(218, 91, 57, 0.2);
+    border-color: rgb(218, 91, 57);
+}
+@keyframes scroll-up {
+    0%{
+      opacity: 0;
+      top: 90%;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media (max-width: 640px)
+{
+    .scroll-up{display: none;}
+}
+
 /* FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER_FOOTER*/
+footer {
+  margin: 0;
+  margin-top: 15%;
+  padding: 1%;
+  border-top: 1px solid black;
+}
+.row.footer{
+  padding-top:2%; 
+}
