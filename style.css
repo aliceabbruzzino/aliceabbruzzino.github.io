@@ -22,7 +22,7 @@ body{
 /* TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU_TOP MENU */
 .navbar{
   border-bottom: 0.5px solid black;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .nav-item{
@@ -95,7 +95,7 @@ body{
 .sticker-1{
     width: 500px;
     margin: 8%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 @media (max-width: 640px)
 {
@@ -159,18 +159,18 @@ body{
     text-align: center;
 }
 
-.portfolio, h1{
+.portfolio,h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 30px;
     padding-top: 24px;
 }
-.portfolio, p{
+p.subtitle-portfolio{
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 80px;
+    padding-bottom: 4%;
 }
 .comment{
     font-family: 'Poppins', sans-serif;
@@ -327,11 +327,87 @@ footer {
 
 /* LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE_LIFEPAGE*/
 #parallax-image {
-  background-image: url('.\img\Photos\03_revolving_cone_edited.jpg');
-  height: 500px;
+  background-image: url('03_revolving_cone_edited.jpg');
+  height: 800px;
   margin-bottom: 50px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+}
+
+h1.project-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 8em;
+  padding-bottom: 1%;
+  color: white;
+}
+
+p.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: white;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: -8%;
+}
+
+.row.life{
+  margin-bottom: 8%;
+}
+
+.col-lg-3.col-md-6.life{
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.col-md.life{
+  padding-top: 10%;
+}
+
+.img_description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10%;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+@media (max-width: 640px)
+{
+    .img_description{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding: 5%;
+      text-align: left;
+      transform: translate(-50%, -50%);
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      font-size: 10px;
+    }
+}
+
+.carousel-item:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
 }
