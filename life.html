@@ -27,7 +27,7 @@
         </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="life.html">Life</a>
-              <a class="dropdown-item" href="#">Rain</a>
+              <a class="dropdown-item" href="rain.html">Rain</a>
               <a class="dropdown-item" href="#">JBL Speaker</a>
               <a class="dropdown-item" href="#">Unpredictable Burger</a>
             </div>
@@ -40,7 +40,7 @@
 
 <!-- PAGE CONTENT -->
 <body>
-    <div id="parallax-image">
+    <div id="parallax-image-life">
       <div class="row h-100">
         <div class="col-md-12 align-self-center">
           <h1 class="text-center project-title">Life</h1>
@@ -215,29 +215,69 @@
 </body>
 
 <!-- Footer -->
-  <footer>
+<footer>
   <div id="contact" class="footer">
-    <div class="row footer">
-      <div class="col-lg footer">
-        <p>
-          © Alice Abbruzzino 2021
-        </p>
+      <div class="col footer">
+        <!-- Default form contact -->
+        <div class="form">
+          <form id="send" action="/send">
+            <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Name">
+
+            <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-2" placeholder="E-mail">
+
+            <!-- Subject -->
+            <select class="browser-default custom-select mb-2">
+                <option value="1" aria-placeholder="Choose option" disabled selected>Choose option</option>
+                <option value="2">Hiring request</option>
+                <option value="3">Information request</option>
+                <option value="4">Feedback</option>
+            </select>
+
+            <!-- Message -->
+            <div class="form-group">
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Message"></textarea>
+            </div>
+
+            
+                <a href="https://www.instagram.com/alice_abbruzzino"> 
+                  <img class="icon" src="icons/insta.svg" onmouseover="this.src='icons/insta_alternate.svg'" onmouseout="this.src='icons/insta.svg'" width="30">
+                </a>
+        
+                <a href="https://www.instagram.com/alicetheillustrator">           
+                  <img class="icon" src="icons/insta.svg" onmouseover="this.src='icons/insta_alternate.svg'" onmouseout="this.src='icons/insta.svg'" width="30">
+                </a>
+        
+                <a href="https://www.linkedin.com/in/alice-abbruzzino-b064531b4/"> 
+                  <img class="icon" src="icons/linkedin.svg" onmouseover="this.src='icons/linkedin_alternate.svg'" onmouseout="this.src='icons/linkedin.svg'" width="30">
+                </a>
+        
+                <a href="https://github.com/aliceabbruzzino/aliceabbruzzino.github.io"> 
+                  <img class="icon" src="icons/github.svg" onmouseover="this.src='icons/github_alternate.svg'" onmouseout="this.src='icons/github.svg'" width="30"> 
+                </a>
+        
+                <a href="mailto: aliceabbruzzino7@gmail.com"> 
+                  <img class="icon" src="icons/mail.svg" onmouseover="this.src='icons/mail_alternate.svg'" onmouseout="this.src='icons/mail.svg'" width="30"> 
+                </a>
+                  <!-- Send button -->
+                <button class="btn btn-sm send" type="submit">Send</button>
+          </form>
+          <!-- Default form contact -->
+        </div>
       </div>
-      <div class="col-1 footer">
-        <a href="https://www.instagram.com/alice_abbruzzino"> ig </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="https://www.instagram.com/alicetheillustrator"> IG2 </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="https://github.com/aliceabbruzzino/aliceabbruzzino.github.io"> GitHub </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="mailto: aliceabbruzzino7@gmail.com"> Mail </a>
-      </div>
+
+    <div class="col footer">
+      <!-- Socials -->
+        
+        
     </div>
   </div>
+  <p class="copyright">
+    © Alice Abbruzzino 2021
+  </p>
 </footer>
+
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

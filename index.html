@@ -26,7 +26,7 @@
         </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="life.html">Life</a>
-              <a class="dropdown-item" href="#">Rain</a>
+              <a class="dropdown-item" href="rain.html">Rain</a>
               <a class="dropdown-item" href="#">JBL Speaker</a>
               <a class="dropdown-item" href="#">Unpredictable Burger</a>
             </div>
@@ -59,7 +59,7 @@
                     <p class="subtitle-portfolio"> A photographic journey into the woods </p>
                 </div>
                 <div class="col-md portfolio">
-                    <img class="work-img" src="img/solid_colour/green.jpeg">
+                    <img class="work-img" src="img/rain/rain_thumbnail.jpg">
                     <h1> Rain </h1>
                     <p class="subtitle-portfolio"> A wet and dramatic sound story </p>
                 </div>
@@ -78,7 +78,7 @@
     </div>
 
  <!-- ABOUT -->
-    <div id="about" class="container">
+    <div id="about" class="container about">
       <p class="comment"> ✧ oh no, I have to talk abuot me （･□･）</p>
       <div class="row about">
          <div class="col-md about">
@@ -102,37 +102,79 @@
          </div>
          <div class="col-md about">
           <img id="profile" src="img/WhatsApp Image 2021-11-05 at 11.39.23.jpeg">
+          <a href="mailto: aliceabbruzzino7@gmail.com">
+            <img class="hireme" src="icons/hireme.svg">
+          </a>
+          
          </div>
        </div>
        <a href="#home">
            <div class="scroll-up"></div>
        </a>
-      </div>
+      
+    </div>
 </body>
 
 <!-- Footer -->
   <footer>
   <div id="contact" class="footer">
-    <div class="row footer">
-      <div class="col-lg footer">
-        <p>
-          © Alice Abbruzzino 2021
-        </p>
+      <div class="col footer">
+        <!-- Default form contact -->
+        <div class="form">
+          <form action="#!">
+            <!-- Name -->
+            <input type="text" id="defaultContactFormName" class="form-control mb-2" placeholder="Name">
+
+            <!-- Email -->
+            <input type="email" id="defaultContactFormEmail" class="form-control mb-2" placeholder="E-mail">
+
+            <!-- Subject -->
+            <select class="browser-default custom-select mb-2">
+                <option value="1" aria-placeholder="Choose option" disabled selected>Choose option</option>
+                <option value="2">Hiring request</option>
+                <option value="3">Information request</option>
+                <option value="4">Feedback</option>
+            </select>
+
+            <!-- Message -->
+            <div class="form-group">
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="2" placeholder="Message"></textarea>
+            </div>
+                <a href="https://www.instagram.com/alice_abbruzzino"> 
+                  <img class="icon" src="icons/insta.svg" onmouseover="this.src='icons/insta_alternate.svg'" onmouseout="this.src='icons/insta.svg'" width="30">
+                </a>
+        
+                <a href="https://www.instagram.com/alicetheillustrator">           
+                  <img class="icon" src="icons/insta.svg" onmouseover="this.src='icons/insta_alternate.svg'" onmouseout="this.src='icons/insta.svg'" width="30">
+                </a>
+        
+                <a href="https://www.linkedin.com/in/alice-abbruzzino-b064531b4/"> 
+                  <img class="icon" src="icons/linkedin.svg" onmouseover="this.src='icons/linkedin_alternate.svg'" onmouseout="this.src='icons/linkedin.svg'" width="30">
+                </a>
+        
+                <a href="https://github.com/aliceabbruzzino/aliceabbruzzino.github.io"> 
+                  <img class="icon" src="icons/github.svg" onmouseover="this.src='icons/github_alternate.svg'" onmouseout="this.src='icons/github.svg'" width="30"> 
+                </a>
+        
+                <a href="mailto: aliceabbruzzino7@gmail.com"> 
+                  <img class="icon" src="icons/mail.svg" onmouseover="this.src='icons/mail_alternate.svg'" onmouseout="this.src='icons/mail.svg'" width="30"> 
+                </a>
+                  <!-- Send button -->
+                <button class="btn btn-sm send" type="submit">Send</button>
+          </form>
+          <!-- Default form contact -->
+        </div>
       </div>
-      <div class="col-1 footer">
-        <a href="https://www.instagram.com/alice_abbruzzino"> ig </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="https://www.instagram.com/alicetheillustrator"> IG2 </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="https://github.com/aliceabbruzzino/aliceabbruzzino.github.io"> GitHub </a>
-      </div>
-      <div class="col-1 footer">
-        <a href="mailto: aliceabbruzzino7@gmail.com"> Mail </a>
-      </div>
+
+    <div class="col footer">
+      <!-- Socials -->
+        
+        
     </div>
   </div>
+  <p class="copyright">
+    © Alice Abbruzzino 2021
+  </p>
 </footer>
 
 <!-- Optional JavaScript -->
