@@ -70,7 +70,7 @@ body{
 .dropdown-menu{
   position: absolute;
   z-index: 1000;
-  right: 17%;
+  right: 16%;
   left: 70%;
   text-align: left;
   border: none;
@@ -517,4 +517,30 @@ h3{
 
 .rain-road {
   margin-bottom: 5%;
+}
+
+/* JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER_JBLSPEAKER*/
+#parallax-image-jbl {
+  background-image: url('jbl_extended.jpg');
+  height: 800px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.row.jbl{
+  margin-bottom: 5%;
+}
+
+.col-lg-3.col-md-6.jbl{
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.col-md.jbl{
+  padding-top: 10%;
 }
