@@ -96,10 +96,20 @@ body{
     width: 500px;
     margin: 8%;
     margin-bottom: 15%;
+    display: block;
 }
 @media (max-width: 640px)
 {
     .sticker-1{width: 80%;}
+}
+
+.hello-button{
+  border: none;
+  text-decoration: none;
+}
+.hello-button::after{
+  border: none;
+  text-decoration: none;
 }
 
 .scroll-down{
