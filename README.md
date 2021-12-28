@@ -28,6 +28,12 @@ Technologies used:
         https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
         https://www.creativebloq.com/how-to/create-a-responsive-layout-with-css-grid
         https://www.w3schools.com/css/css_rwd_templates.asp
-9. Inspiration
+9. Rotation on scroll
+        https://pretagteam.com/question/how-to-rotate-image-when-scrolling-using-css-transform
+10. Inspiration
         https://www.designspiration.com/save/115956289567/
         https://lindseycreated.com/
+11. Icons and images
+        https://thenounproject.com/
+        https://pixabay.com/it/
+        
